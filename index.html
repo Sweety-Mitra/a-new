@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table-Form</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 60%;
+      }
+      th,
+      td {
+        border: 1px solid #444;
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Feild</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <label for="name">Name:</label>
+          </td>
+          <td><input type="text" id="name" name="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age:</label></td>
+          <td>
+            <input type="number" id="age" name="age" />
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="3">Fruits:</td>
+          <td>
+            <input type="radio" id="mango" name="fruits" value="MANGO" />
+            <label for="mango">MANGO</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="banana" name="fruits" value="BANANA" />
+            <label for="banana">BANANA</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="orange" name="fruits" value="ORANGE" />
+            <label for="orange">ORANGE</label>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="3">HOBBIES:</td>
+          <td>
+            <input type="checkbox" name="play" value="Cricket" />
+            <label for="play">CIRCKET</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="sing" value="Singing" />
+            <label for="sing">SINGING</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="dance" value="dancing" />
+            <label for="dance">DANCING</label>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
